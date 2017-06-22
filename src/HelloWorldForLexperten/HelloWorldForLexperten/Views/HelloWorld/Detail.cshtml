@@ -1,33 +1,25 @@
 ﻿@{
-    Layout = null;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Hello World Welcome!";
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-    <div>
-        <h1>@ViewBag.WelcomeMessage</h1>
-		<h2>@ViewBag.SeriesTitle</h2>
-		<h3>Issue #@ViewBag.IssueNumber</h3>
+<div>
+    <h1>@ViewBag.WelcomeMessage</h1>
+	<h2>@ViewBag.SeriesTitle</h2>
+	<h3>Issue #@ViewBag.IssueNumber</h3>
 			
-        <h5>Description</h5>
-        <div>@Html.Raw(@ViewBag.Description)</div>
+    <h5>Description</h5>
+    <div>@Html.Raw(@ViewBag.Description)</div>
 
-		<h5>Artists:</h5>
-		<div>
-			<ul>
-			@foreach (var artist in ViewBag.Artists)
-			{
-			    <li>@artist</li>
+	<h5>Artists:</h5>
+	<div>
+		<ul>
+		@foreach (var artist in ViewBag.Artists)
+		{
+			<li>@artist</li>
                 
-			}
-			</ul>
-		</div>
+		}
+		</ul>
+	</div>
 			
-    </div>
-</body>
-</html>
+</div>
