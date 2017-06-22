@@ -15,15 +15,14 @@ namespace HelloWorldForLexperten.Controllers
         }
         public ActionResult Detail()
         {
-            if(DateTime.Today.DayOfWeek == DayOfWeek.Thursday) 
-            {
-                return new RedirectResult("/");
-            };
+            //if(DateTime.Today.DayOfWeek == DayOfWeek.Monday) 
+            //{
+            //    return new RedirectResult("/");
+            //};
 
-            return new ContentResult()
-            {
-                Content = "Hello World from the Hello World For Lexperten Controller"
-            };
+            //return Content("Hello World from the Hello World For Lexperten Controller!");
+
+            return View();
         }
     }
 }
