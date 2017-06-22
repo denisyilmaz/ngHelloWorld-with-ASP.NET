@@ -73,16 +73,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Content\" />
     <Folder Include="Models\" />
-    <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\site.css" />
+    <Content Include="Fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Images\bone-50.jpg" />
+    <Content Include="Images\the-amazing-spider-man-657.jpg" />
+    <Content Include="Images\the-amazing-spider-man-700.jpg" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Views\Web.config" />
     <Content Include="Web.config" />
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
     <Content Include="Views\HelloWorld\Detail.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -90,6 +100,14 @@
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HelloWorldController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
