@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -12,9 +13,17 @@ namespace HelloWorldForLexperten.Controllers
         {
             return View ();
         }
-        public string Detail()
+        public ActionResult Detail()
         {
-            return "Hello World from the Hello World For Lexperten Controller";
+            if(DateTime.Today.DayOfWeek == DayOfWeek.Thursday) 
+            {
+                return new RedirectResult("/");
+            };
+
+            return new ContentResult()
+            {
+                Content = "Hello World from the Hello World For Lexperten Controller"
+            };
         }
     }
 }
