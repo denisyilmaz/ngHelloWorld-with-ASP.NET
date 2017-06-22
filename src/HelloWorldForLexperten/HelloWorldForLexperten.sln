@@ -1,6 +1,7 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldForLexperten", "HelloWorldForLexperten\HelloWorldForLexperten.csproj", "{CE05F375-078B-4FB9-A1DE-96A7E291EEA3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldForLexperten.Tests", "HelloWorldForLexperten.Tests\HelloWorldForLexperten.Tests.csproj", "{398056C3-FC9D-47C1-B104-1D4FD318C9DC}"
@@ -19,5 +20,8 @@ Global
 		{398056C3-FC9D-47C1-B104-1D4FD318C9DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{398056C3-FC9D-47C1-B104-1D4FD318C9DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{398056C3-FC9D-47C1-B104-1D4FD318C9DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
