@@ -12,5 +12,9 @@ namespace HelloWorldForLexperten.Controllers
         {
             return View ();
         }
+        public string Detail()
+        {
+            return "Hello World from the Hello World For Lexperten Controller";
+        }
     }
 }
